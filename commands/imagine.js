@@ -21,7 +21,7 @@ async function imagineCommand(sock, chatId, message) {
 
         // Send processing message
         await sock.sendMessage(chatId, {
-            text: '🎨 Generating your image... Please wait.'
+            text: '🤖🪄 Generating your image... Please wait.'
         }, {
             quoted: message
         });
@@ -44,7 +44,7 @@ async function imagineCommand(sock, chatId, message) {
         // Send the generated image
         await sock.sendMessage(chatId, {
             image: imageBuffer,
-            caption: `🎨 Generated image for prompt: "${imagePrompt}"`
+            caption: `🎨📸 Generated image for prompt: "${imagePrompt}"`
         }, {
             quoted: message
         });
