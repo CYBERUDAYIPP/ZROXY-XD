@@ -1,7 +1,7 @@
 const settings = require("../settings");
 async function aliveCommand(sock, chatId, message) {
     try {
-        const message1 = `*🤖 Knight Bot is Active!*\n\n` +
+        const message1 = `*🤖 ZROXY-XD is Active!*\n\n` +
                        `*Version:* ${settings.version}\n` +
                        `*Status:* Online\n` +
                        `*Mode:* Public\n\n` +
@@ -10,7 +10,10 @@ async function aliveCommand(sock, chatId, message) {
                        `• Antilink Protection\n` +
                        `• Fun Commands\n` +
                        `• And more!\n\n` +
-                       `Type *.menu* for full command list`;
+                       `Type *.menu* for full command list` +
+        
+        `> CYBERUDAYIPP`;
+        
 
         await sock.sendMessage(chatId, {
             text: message1,
@@ -18,8 +21,8 @@ async function aliveCommand(sock, chatId, message) {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363161513685998@newsletter',
-                    newsletterName: 'KnightBot MD',
+                    newsletterJid: '0029VaDYyTT5EjxuxuGTcg3Q@newsletter',
+                    newsletterName: 'CYBER UDAYIPP',
                     serverMessageId: -1
                 }
             }
