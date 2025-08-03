@@ -5,9 +5,9 @@ const path = require('path');
 async function helpCommand(sock, chatId, message) {
     const helpMessage = `
 ╔═══════════════════╗
-   *🤖 ${settings.botName || 'KnightBot-MD'}*  
-   Version: *${settings.version || '2.0.5'}*
-   by ${settings.botOwner || 'Mr Unique Hacker'}
+   *🤖 ${settings.botName || 'ZROXY-XD'}*  
+   Version: *${settings.version || '2.0.0'}*
+   by ${settings.botOwner || 'CYBER UDAYIPP'}
    YT : ${global.ytch}
 ╚═══════════════════╝
 
@@ -156,7 +156,7 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .repo
 ╚═══════════════════╝
 
-Join our channel for updates:`;
+MAKE FUN WITH ZROXY-XD 🥵:`;
 
     try {
         const imagePath = path.join(__dirname, '../assets/bot_image.jpg');
@@ -171,8 +171,8 @@ Join our channel for updates:`;
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363161513685998@newsletter',
-                        newsletterName: 'KnightBot MD',
+                        newsletterJid: '0029VaDYyTT5EjxuxuGTcg3Q@newsletter',
+                        newsletterName: 'CYBER UDAYIPP',
                         serverMessageId: -1
                     }
                 }
@@ -185,8 +185,8 @@ Join our channel for updates:`;
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363161513685998@newsletter',
-                        newsletterName: 'KnightBot MD by Mr Unique Hacker',
+                        newsletterJid: '0029VaDYyTT5EjxuxuGTcg3Q@newsletter',
+                        newsletterName: 'CYBER UDAYIPP',
                         serverMessageId: -1
                     } 
                 }
