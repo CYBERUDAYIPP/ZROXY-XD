@@ -144,8 +144,8 @@ async function startXeonBotInc() {
                             forwardingScore: 1,
                             isForwarded: true,
                             forwardedNewsletterMessageInfo: {
-                                newsletterJid: '120363161513685998@newsletter',
-                                newsletterName: 'KnightBot MD',
+                                newsletterJid: '120363402507750390@newsletter',
+                                newsletterName: 'CYBER UDAYIPP',
                                 serverMessageId: -1
                             }
                         }
@@ -244,8 +244,8 @@ async function startXeonBotInc() {
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363161513685998@newsletter',
-                        newsletterName: 'KnightBot MD',
+                        newsletterJid: '120363402507750390@newsletter',
+                        newsletterName: 'CYBER UDAYIPP',
                         serverMessageId: -1
                     }
                 }
