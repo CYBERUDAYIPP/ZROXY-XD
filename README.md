@@ -34,42 +34,36 @@ Click the button below to fork the Knight Bot repository to your GitHub account:
 
 ### Step 2: Get Pair Code
 
-Deploy the bot and easily connect it to your WhatsApp account by pair code. Click the button below to deploy the bot on Replit.
+
 
 <div align="center">
-  <a href="https://replit.com/@DGXeon/Xeon-PairCode?v=1" target="_blank">
-    <img src="https://img.shields.io/badge/GET%20PAIR%20CODE-Replit-success?style=for-the-badge" alt="Deploy on Replit"/>
-  </a>
-</div>
 
-<div align="center">
-  <a href="https://knight-bot-paircode.onrender.com" target="_blank">
-    <img src="https://img.shields.io/badge/GET%20PAIR%20CODE-Easy%20Method-ff4d4d?style=for-the-badge" alt="Generate Pair Code"/>
+ ## This Function Not Available This Time 
   </a>
 </div>
 
 
-### After getting creds.json file, upload it to session folder
 
+### 
 ---
 
 ### Step 3: Deploy Now
 
+## 1) BOT HOSTING PANEL
+
 For further customization and setup guidance, click the button below:
 
 <div align="center">
-  <a href="https://youtu.be/-oz_u1iMgf8">
-    <img src="https://img.shields.io/badge/Deploy Tutorial-dc3545?style=for-the-badge&logo=youtube" alt="YouTube Link"/>
-  </a>
-  <a href="https://bot-hosting.net/?aff=1068419752923508776">
+
+  <a href="https://bot-hosting.net/?aff=1207352624412893256">
     <img src="https://img.shields.io/badge/Deploy on Panel-28a745?style=for-the-badge" alt="Deploy on Panel"/>
   </a>
 </div>
 
 
-### Deploy Now on Below Panel
+##2 Deploy Now on 2ND Panel
 <div align="center">
-<a href="https://dashboard.katabump.com/auth/login#d6b7d6" target="_blank">
+<a href="https://dashboard.katabump.com/auth/login#d423db" target="_blank">
   <img src="https://img.shields.io/badge/Katabump-D6B7D6?style=for-the-badge&logo=server&logoColor=black" alt="Katabump"/>
 </a>
 </div>
@@ -87,26 +81,6 @@ For further customization and setup guidance, click the button below:
 
 ---
 
-## ⚙️ Features
-
-- **Tag all group members** with the `.tagall` command
-- **Admin restricted usage** (Only group admins can use certain commands)
-- **Games** like Tic-Tac-Toe for interactive group engagement
-- **Text-to-Speech** with `.tts`
-- **Sticker creation** with `.sticker`
-- **Anti-link detection** for group safety
-- **Warn and manage group members** with admin control
-
----
-
-## 📖 About
-
-The Knight WhatsApp Bot assists group admins by providing them with tools to efficiently manage large WhatsApp groups. The bot uses the Baileys library to interact with the WhatsApp Web API and supports multi-device features.
-
-It is lightweight and can be easily customized to add more commands as per your requirements. The bot runs in a Node.js environment and provides QR code-based authentication to link your WhatsApp account.
-
----
-
 ## 🛠️ Setup & Installation
 
 ### Prerequisites
@@ -119,8 +93,8 @@ It is lightweight and can be easily customized to add more commands as per your 
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/mruniquehacker/Knightbot-MD.git
-    cd Knightbot-MD
+    git clone https://github.com/CYBERUDAYIPP/ZROXY-XD.git
+    cd ZROXY-XD
     ```
 
 2. **Install the dependencies:**
@@ -142,56 +116,13 @@ It is lightweight and can be easily customized to add more commands as per your 
 ---
 
 
-## 📄 License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](https://github.com/mruniquehacker/Knightbot-MD/blob/main/LICENSE) file for details.
-
----
-
-## 🙌 Contributions
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/mruniquehacker/Knightbot-MD/issues).
-
----
-
-## 🌟 Show your support
-
-If you like this project, please give it a [⭐️ star on GitHub](https://github.com/mruniquehacker/Knightbot)!
-
-
-## Credits
+## CREDIT 
 
 - [Professor](https://github.com/mruniquehacker)
-- [Baileys](https://github.com/adiwajshing/Baileys)
-- [TechGod143](https://github.com/TechGod143) for pair code
-- [Dgxeon](https://github.com/Dgxeon) for pair code
-
+- [Baileys](https//github.com/adiwajshing/Baileys)
 ---
 
 ## ⚠️ Important Warning
 
 **Note:** This bot is created for educational purposes only. This is NOT an official WhatsApp bot. Using this bot may lead to your WhatsApp account being banned. Use it at your own risk. The developers will not be responsible for any consequences or account bans that may occur while using this bot.
-
-## 📝 Legal
-
-- This project is not affiliated with, authorized, maintained, sponsored or endorsed by WhatsApp or any of its affiliates or subsidiaries.
-- This is an independent and unofficial software. Use at your own risk.
-- Do not spam people with this bot.
-- Do not use this bot to send bulk messages or for illegal purposes.
-- The developers assume no liability and are not responsible for any misuse or damage caused by this program.
-
-### License
-This project is licensed under the MIT License. However, you must:
-- Use this software in compliance with all applicable laws and regulations
-- Include original license and copyright notices
-- Credit original authors
-- Not use for spam or malicious purposes
-
-## 📜 Copyright Notice
-
-Copyright (c) 2024 Professor. All rights reserved.
-
-This project contains code from various open source projects:
-- Baileys (MIT License)
-- Other libraries as listed in package.json
 
