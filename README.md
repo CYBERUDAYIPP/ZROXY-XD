@@ -1,7 +1,4 @@
-# ZROXY-XD
-Whatsapp Bot Created by CYBER UDAYIPP 
-# ZROXY-XD
-Whatsapp Bot Created by CYBER UDAYIPP
+
 
 # 🤖 ZROXY-XD
 
