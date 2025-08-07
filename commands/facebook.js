@@ -22,7 +22,7 @@ async function facebookCommand(sock, chatId, message) {
 
         // Send loading reaction
         await sock.sendMessage(chatId, {
-            react: { text: '🔄', key: message.key }
+            react: { text: '⏳', key: message.key }
         });
 
         // Fetch video data from API
@@ -84,7 +84,7 @@ async function facebookCommand(sock, chatId, message) {
         await sock.sendMessage(chatId, {
             video: { url: tempFile },
             mimetype: "video/mp4",
-            caption: "𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 𝗞𝗡𝗜𝗚𝗛𝗧-𝗕𝗢𝗧"
+            caption: "> *DOWNLOAD BY ZROXY-XD BOT* 🥵🫶"
         }, { quoted: message });
 
         // Clean up temp file
