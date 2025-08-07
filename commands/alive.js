@@ -10,7 +10,7 @@ async function aliveCommand(sock, chatId, message) {
                        `• Antilink Protection\n` +
                        `• Fun Commands\n` +
                        `• And more!\n\n` +
-                       `Type *.menu* for full command list` +
+                       `Type *.menu* for full command list\n\n` +
         
         `> CYBERUDAYIPP`;
         
