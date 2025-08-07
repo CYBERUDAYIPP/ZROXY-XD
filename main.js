@@ -108,8 +108,8 @@ const channelInfo = {
         forwardingScore: 1,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363161513685998@newsletter',
-            newsletterName: 'KnightBot MD',
+            newsletterJid: '0029VaDYyTT5EjxuxuGTcg3Q@newsletter',
+            newsletterName: 'CYBER UDAYIPP',
             serverMessageId: -1
         }
     }
@@ -846,7 +846,7 @@ async function handleGroupParticipantUpdate(sock, update) {
             const data = JSON.parse(fs.readFileSync('./data/userGroupData.json'));
             const welcomeData = data.welcome[id];
             const welcomeMessage = welcomeData?.message || 'Welcome {user} to the group! 🎉';
-            const channelId = welcomeData?.channelId || '120363161513685998@newsletter';
+            const channelId = welcomeData?.channelId || '0029VaDYyTT5EjxuxuGTcg3Q@newsletter';
 
             // Send welcome message for each new participant
             for (const participant of participants) {
@@ -864,7 +864,7 @@ async function handleGroupParticipantUpdate(sock, update) {
                         isForwarded: true,
                         forwardedNewsletterMessageInfo: {
                             newsletterJid: channelId,
-                            newsletterName: 'KnightBot MD',
+                            newsletterName: 'CYBRR UDAYIPP',
                             serverMessageId: -1
                         }
                     }
@@ -886,7 +886,7 @@ async function handleGroupParticipantUpdate(sock, update) {
             const data = JSON.parse(fs.readFileSync('./data/userGroupData.json'));
             const goodbyeData = data.goodbye[id];
             const goodbyeMessage = goodbyeData?.message || 'Goodbye {user} 👋';
-            const channelId = goodbyeData?.channelId || '120363161513685998@newsletter';
+            const channelId = goodbyeData?.channelId || '0029VaDYyTT5EjxuxuGTcg3Q@newsletter';
 
             // Send goodbye message for each leaving participant
             for (const participant of participants) {
@@ -903,7 +903,7 @@ async function handleGroupParticipantUpdate(sock, update) {
                         isForwarded: true,
                         forwardedNewsletterMessageInfo: {
                             newsletterJid: channelId,
-                            newsletterName: 'KnightBot MD',
+                            newsletterName: 'CYBER UDAYIPP',
                             serverMessageId: -1
                         }
                     }
