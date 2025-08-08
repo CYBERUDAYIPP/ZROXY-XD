@@ -144,7 +144,7 @@ async function startXeonBotInc() {
                             forwardingScore: 1,
                             isForwarded: true,
                             forwardedNewsletterMessageInfo: {
-                                newsletterJid: '120363402507750390@newsletter',
+                                newsletterJid: '0029VaDYyTT5EjxuxuGTcg3Q@newsletter',
                                 newsletterName: 'CYBER UDAYIPP',
                                 serverMessageId: -1
                             }
@@ -244,7 +244,7 @@ async function startXeonBotInc() {
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363402507750390@newsletter',
+                        newsletterJid: '0029VaDYyTT5EjxuxuGTcg3Q@newsletter',
                         newsletterName: 'CYBER UDAYIPP',
                         serverMessageId: -1
                     }
@@ -252,13 +252,13 @@ async function startXeonBotInc() {
             });
 
             await delay(1999)
-            console.log(chalk.yellow(`\n\n                  ${chalk.bold.blue(`[ ${global.botname || 'ZROXY-XD'} ]`)}\n\n`))
-            console.log(chalk.cyan(`< ================================================== >`))
-            console.log(chalk.magenta(`\n${global.themeemoji || '•'} YT CHANNEL: CYBER UDAYIPP`))
-            console.log(chalk.magenta(`${global.themeemoji || '•'} GITHUB: CYBERUDAYIPP`))
-            console.log(chalk.magenta(`${global.themeemoji || '•'} WA NUMBER: ${owner}`))
-            console.log(chalk.magenta(`${global.themeemoji || '•'} CREDIT: CYBER UDAYIPP`))
-            console.log(chalk.green(`${global.themeemoji || '•'} 🤖 Bot Connected Successfully! ✅`))
+            console.log(chalk.yellow(`\n\n                  ${chalk.bold.blue(`[ ${global.botname || 'ZROXY-XD BOT'} ]`)}\n\n`))
+            console.log(chalk.cyan(`< _--__--__--__--__--__--__--__--__--__-- >`))
+            console.log(chalk.magenta(`\n${global.themeemoji || '🪄'} OWNER: CYBER UDAYIPP`))
+            console.log(chalk.magenta(`${global.themeemoji || '🥵'} GITHUB: CYBERUDAYIPP`))
+            console.log(chalk.magenta(`${global.themeemoji || '🥵'} WA NUMBER: ${owner}`))
+            console.log(chalk.magenta(`${global.themeemoji || '🪄'} CREDIT: CYBER UDAYIPP`))
+            console.log(chalk.green(`${global.themeemoji || '🤖'} 🤖☺️ Bot Connected Successfully! ✅`))
         }
         if (
             connection === "close" &&
