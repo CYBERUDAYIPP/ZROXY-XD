@@ -1,7 +1,7 @@
 const settings = require("../settings");
 async function aliveCommand(sock, chatId, message) {
     try {
-        const message1 = `*🤖 ZROXY-XD is Active!*\n\n` +
+        const message1 = `*🤖 ZROXY-XD is Active NOW!*\n\n` +
                        `*Version:* ${settings.version}\n` +
                        `*Status:* Online\n` +
                        `*Mode:* Public\n\n` +
@@ -10,10 +10,7 @@ async function aliveCommand(sock, chatId, message) {
                        `• Antilink Protection\n` +
                        `• Fun Commands\n` +
                        `• And more!\n\n` +
-                       `Type *.menu* for full command list\n\n` +
-        
-        `> CYBERUDAYIPP`;
-        
+                       `Type *.menu* for full command list`;
 
         await sock.sendMessage(chatId, {
             text: message1,
@@ -21,7 +18,7 @@ async function aliveCommand(sock, chatId, message) {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '0029VaDYyTT5EjxuxuGTcg3Q@newsletter',
+                    newsletterJid: '120363403368371168@newsletter',
                     newsletterName: 'CYBER UDAYIPP',
                     serverMessageId: -1
                 }
