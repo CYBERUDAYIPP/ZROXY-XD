@@ -95,6 +95,27 @@ const { rosedayCommand } = require('./commands/roseday');
 const imagineCommand = require('./commands/imagine');
 const videoCommand = require('./commands/video');
 
+const fs = require("fs");
+const path = require("path");
+
+const plugins = [];
+
+// load plugins
+const pluginPath = path.join(__dirname, "plugins");
+if (fs.existsSync(pluginPath)) {
+    const files = fs.readdirSync(pluginPath).filter(f => f.endsWith(".js"));
+    for (const file of files) {
+        try {
+            const p = require(path.join(pluginPath, file));
+            plugins.push(p);
+            console.log("Loaded plugin:", file);
+        } catch (err) {
+            console.error("Plugin load error:", file, err);
+        }
+    }
+}
+
+
 
 // Global settings
 global.packname = settings.packname;
@@ -122,6 +143,24 @@ async function handleMessages(sock, messageUpdate, printLog) {
 
         const message = messages[0];
         if (!message?.message) return;
+
+        // Run plugin onMessage hooks
+for (const p of plugins) {
+    if (typeof p.onMessage === "function") {
+        try {
+            await p.onMessage({
+                sock,
+                message,
+                chatId,
+                senderId,
+                text: userMessage,
+            });
+        } catch (err) {
+            console.log("Plugin onMessage error:", err);
+        }
+    }
+}
+
 
         // Store message for antidelete feature
         if (message.message) {
@@ -815,6 +854,11 @@ async function handleMessages(sock, messageUpdate, printLog) {
 async function handleGroupParticipantUpdate(sock, update) {
     try {
         const { id, participants, action, author } = update;
+
+        const id = update.id;
+const participants = update.participants;
+const action = update.action;
+
 
         // Check if it's a group
         if (!id.endsWith('@g.us')) return;
