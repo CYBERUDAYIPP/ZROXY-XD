@@ -198,7 +198,12 @@ async function handleMessages(sock, messageUpdate, printLog) {
         if (!userMessage.startsWith('.')) {
             if (isGroup) {
                 // Process non-command messages first
-                await handleChatbotResponse(sock, chatId, message, userMessage, senderId);
+                const reply = await handleChatbotResponse(sock, chatId, message, userMessage, senderId);
+if (reply) {
+    const mode = persona.getPersona(chatId);
+    await sock.sendMessage(chatId, { text: applyPersona(mode, reply) });
+}
+
                 await Antilink(message, sock);
                 await handleBadwordDetection(sock, chatId, message, userMessage, senderId);
             }
