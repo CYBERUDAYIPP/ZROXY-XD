@@ -94,8 +94,6 @@ const { shayariCommand } = require('./commands/shayari');
 const { rosedayCommand } = require('./commands/roseday');
 const imagineCommand = require('./commands/imagine');
 const videoCommand = require('./commands/video');
-const persona = require('./lib/personaManager');
-
 
 
 // Global settings
@@ -198,12 +196,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
         if (!userMessage.startsWith('.')) {
             if (isGroup) {
                 // Process non-command messages first
-                const reply = await handleChatbotResponse(sock, chatId, message, userMessage, senderId);
-if (reply) {
-    const mode = persona.getPersona(chatId);
-    await sock.sendMessage(chatId, { text: applyPersona(mode, reply) });
-}
-
+                await handleChatbotResponse(sock, chatId, message, userMessage, senderId);
                 await Antilink(message, sock);
                 await handleBadwordDetection(sock, chatId, message, userMessage, senderId);
             }
@@ -584,27 +577,7 @@ if (reply) {
                 if (!isGroup) {
                     await sock.sendMessage(chatId, { text: 'This command can only be used in groups.', ...channelInfo });
                     return;
-                }  
-                
-               function applyPersona(style, text) {
-    switch (style) {
-
-        case "anime":
-            return `UwU~ ${text} >w< 🌸`;
-
-        case "hacker":
-            return `[⚡ SYSTEM RESPONSE ⚡]\n> ${text}`;
-
-        case "sarcastic":
-            return `${text} 🙄`;
-
-        case "kid":
-            return `${text} hehe 😃`;
-
-        default:
-            return text;
-    }
-}
+                }
 
                 // Check if sender is admin or bot owner
                 const chatbotAdminStatus = await isAdmin(sock, chatId, senderId);
@@ -815,12 +788,7 @@ if (reply) {
                 if (isGroup) {
                     // Handle non-command group messages
                     if (userMessage) {  // Make sure there's a message
-                        const reply = await handleChatbotResponse(sock, chatId, message, userMessage, senderId);
-if (reply) {
-    const mode = persona.getPersona(chatId);
-    await sock.sendMessage(chatId, { text: applyPersona(mode, reply) });
-}
-
+                        await handleChatbotResponse(sock, chatId, message, userMessage, senderId);
                     }
                     await Antilink(message, sock);
                     await handleBadwordDetection(sock, chatId, message, userMessage, senderId);
